@@ -1,5 +1,7 @@
-<html>
-	<body>
-		Congratulations! You are old enough to sign up for this site.
-	</body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!--/*@thymesVar id="urlForm" type="com.app.UrlForm"*/-->
+<b th:text="${#httpServletRequest.requestURL.toString()} + ${urlForm.id}"/>
+</body>
 </html>
